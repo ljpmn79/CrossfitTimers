@@ -32,6 +32,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="fnF-L5-PnS" secondAttribute="centerY" id="4R8-bY-xQt"/>
                                                 <constraint firstItem="fnF-L5-PnS" firstAttribute="leading" secondItem="QbZ-u3-D5b" secondAttribute="leadingMargin" constant="20" id="Joz-Xr-a2U"/>
+                                                <constraint firstAttribute="centerY" secondItem="fnF-L5-PnS" secondAttribute="centerY" id="Omv-DZ-GU5"/>
+                                                <constraint firstAttribute="centerX" secondItem="fnF-L5-PnS" secondAttribute="centerX" id="lri-AK-tQW"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
@@ -40,6 +42,8 @@
                                                 <mask key="constraints">
                                                     <exclude reference="4R8-bY-xQt"/>
                                                     <exclude reference="Joz-Xr-a2U"/>
+                                                    <exclude reference="Omv-DZ-GU5"/>
+                                                    <exclude reference="lri-AK-tQW"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -47,8 +51,10 @@
                                                     <include reference="fnF-L5-PnS"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="4R8-bY-xQt"/>
-                                                    <include reference="Joz-Xr-a2U"/>
+                                                    <exclude reference="4R8-bY-xQt"/>
+                                                    <exclude reference="Joz-Xr-a2U"/>
+                                                    <include reference="Omv-DZ-GU5"/>
+                                                    <include reference="lri-AK-tQW"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -71,7 +77,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="EhT-YH-SYU" firstAttribute="leading" secondItem="irh-ai-tdv" secondAttribute="leadingMargin" constant="20" id="AY9-at-DTV"/>
+                                                <constraint firstAttribute="centerY" secondItem="EhT-YH-SYU" secondAttribute="centerY" id="Tnh-0O-qZy"/>
                                                 <constraint firstAttribute="centerY" secondItem="EhT-YH-SYU" secondAttribute="centerY" id="r2x-Ne-2Yd"/>
+                                                <constraint firstAttribute="centerX" secondItem="EhT-YH-SYU" secondAttribute="centerX" id="zID-d3-36o"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
@@ -79,7 +87,9 @@
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="AY9-at-DTV"/>
+                                                    <exclude reference="Tnh-0O-qZy"/>
                                                     <exclude reference="r2x-Ne-2Yd"/>
+                                                    <exclude reference="zID-d3-36o"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -87,8 +97,10 @@
                                                     <include reference="EhT-YH-SYU"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="AY9-at-DTV"/>
-                                                    <include reference="r2x-Ne-2Yd"/>
+                                                    <exclude reference="AY9-at-DTV"/>
+                                                    <include reference="Tnh-0O-qZy"/>
+                                                    <exclude reference="r2x-Ne-2Yd"/>
+                                                    <include reference="zID-d3-36o"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -112,6 +124,8 @@
                                             <constraints>
                                                 <constraint firstItem="Rx4-w0-Hwb" firstAttribute="leading" secondItem="1xA-Nx-9eL" secondAttribute="leadingMargin" constant="20" id="6Jy-Nx-ucR"/>
                                                 <constraint firstAttribute="centerY" secondItem="Rx4-w0-Hwb" secondAttribute="centerY" id="AKf-UW-zNO"/>
+                                                <constraint firstAttribute="centerY" secondItem="Rx4-w0-Hwb" secondAttribute="centerY" id="HFg-6R-Hcg"/>
+                                                <constraint firstAttribute="centerX" secondItem="Rx4-w0-Hwb" secondAttribute="centerX" id="wmq-0H-SNg"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
@@ -120,6 +134,8 @@
                                                 <mask key="constraints">
                                                     <exclude reference="6Jy-Nx-ucR"/>
                                                     <exclude reference="AKf-UW-zNO"/>
+                                                    <exclude reference="HFg-6R-Hcg"/>
+                                                    <exclude reference="wmq-0H-SNg"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -127,8 +143,10 @@
                                                     <include reference="Rx4-w0-Hwb"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="6Jy-Nx-ucR"/>
-                                                    <include reference="AKf-UW-zNO"/>
+                                                    <exclude reference="6Jy-Nx-ucR"/>
+                                                    <exclude reference="AKf-UW-zNO"/>
+                                                    <include reference="HFg-6R-Hcg"/>
+                                                    <include reference="wmq-0H-SNg"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
