@@ -22,6 +22,8 @@ class FirstViewController: UIViewController {
     var strMinutes = String()
     var strSeconds = String()
     var stopButtonTitle = String()
+    var countdown:Bool = true
+    var countdownSeconds:Int32 = 10
     
     
     override func viewDidLoad() {
@@ -42,10 +44,7 @@ class FirstViewController: UIViewController {
             stopButtonTitle = "Stop"
             btnStop.setTitle(stopButtonTitle, forState: .Normal)
             myTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimerLabel", userInfo: nil, repeats: true)
-            self.tabBarItem.badgeValue = "1"
-            
         }
-        
     }
 
     @IBAction func stopTimer(sender: AnyObject) {
@@ -56,63 +55,83 @@ class FirstViewController: UIViewController {
             stopButtonTitle = "Reset"
             btnStop.setTitle(stopButtonTitle, forState: .Normal)
             myTimer.invalidate()
-            self.tabBarItem.badgeValue = nil
             break
         case "Reset":
             totalSeconds = 0
             lblTimer.text = "00:00"
             stopButtonTitle = "Stop"
+            countdown = true
+            countdownSeconds = 10
             btnStop.setTitle(stopButtonTitle, forState: .Normal)
-            self.tabBarItem.badgeValue = nil
         default:
         break
         }
     }
     
     func updateTimerLabel() {
-        totalSeconds += 1
         
-        seconds = totalSeconds % 60
-        minutes = (totalSeconds / 60) % 60
-        hours = totalSeconds / 3600
-        
-        if hours == 0 && minutes == 0 {
-            
-            if seconds < 10 {
-                strSeconds = "0\(seconds)"
+        if countdown == true && countdownSeconds > 0 {
+            countdownSeconds -= 1
+            if countdownSeconds < 10 {
+                strSeconds = "0\(countdownSeconds)"
             } else {
-                strSeconds = "\(seconds)"
+                strSeconds = "\(countdownSeconds)"
             }
-            
             lblTimer.text = ":" + strSeconds
             
-        } else if hours == 0 {
-            strMinutes = "\(minutes)"
             
-            if seconds < 10 {
-                strSeconds = "0\(seconds)"
-            } else {
-                strSeconds = "\(seconds)"
-            }
-            
-            lblTimer.text = strMinutes + ":" + strSeconds
-            
+        } else if countdown == true && countdownSeconds == 0 {
+            countdown = false
+            totalSeconds = 1
+            lblTimer.text = ":01"
         } else {
-            strHours = "\(hours)"
-            if minutes < 10 {
-                strMinutes = "0\(minutes)"
-            } else {
+            totalSeconds += 1
+            seconds = totalSeconds % 60
+            minutes = (totalSeconds / 60) % 60
+            hours = totalSeconds / 3600
+            
+            if hours == 0 && minutes == 0 {
+                
+                if seconds < 10 {
+                    strSeconds = "0\(seconds)"
+                } else {
+                    strSeconds = "\(seconds)"
+                }
+                
+                lblTimer.text = ":" + strSeconds
+                
+            } else if hours == 0 {
                 strMinutes = "\(minutes)"
-            }
-            if seconds < 10 {
-                strSeconds = "0\(seconds)"
+                
+                if seconds < 10 {
+                    strSeconds = "0\(seconds)"
+                } else {
+                    strSeconds = "\(seconds)"
+                }
+                
+                lblTimer.text = strMinutes + ":" + strSeconds
+                
             } else {
-                strSeconds = "\(seconds)"
+                strHours = "\(hours)"
+                if minutes < 10 {
+                    strMinutes = "0\(minutes)"
+                } else {
+                    strMinutes = "\(minutes)"
+                }
+                if seconds < 10 {
+                    strSeconds = "0\(seconds)"
+                } else {
+                    strSeconds = "\(seconds)"
+                }
+                
+                lblTimer.text = strHours + ":" + strMinutes + ":" + strSeconds
+                
             }
-            
-            lblTimer.text = strHours + ":" + strMinutes + ":" + strSeconds
-            
         }
+ 
+        
+        
+
         
     }
 

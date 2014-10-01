@@ -159,6 +159,36 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="elz-lu-tm7" id="IIj-t6-S84">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fight Gone Bad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXj-uQ-kiI">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="BXj-uQ-kiI" secondAttribute="centerY" id="SUU-Wo-WLZ"/>
+                                                <constraint firstAttribute="centerX" secondItem="BXj-uQ-kiI" secondAttribute="centerX" id="la0-6f-MoD"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="BXj-uQ-kiI"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="SUU-Wo-WLZ"/>
+                                                    <exclude reference="la0-6f-MoD"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="BXj-uQ-kiI"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="SUU-Wo-WLZ"/>
+                                                    <include reference="la0-6f-MoD"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9gc-Ie-dAB">
@@ -166,6 +196,36 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9gc-Ie-dAB" id="m3e-b9-zUp">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZn-Jl-o9t">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="PZn-Jl-o9t" secondAttribute="centerX" id="8e2-xq-huw"/>
+                                                <constraint firstAttribute="centerY" secondItem="PZn-Jl-o9t" secondAttribute="centerY" id="McK-dk-E3g"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="PZn-Jl-o9t"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="8e2-xq-huw"/>
+                                                    <exclude reference="McK-dk-E3g"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="PZn-Jl-o9t"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="8e2-xq-huw"/>
+                                                    <include reference="McK-dk-E3g"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
