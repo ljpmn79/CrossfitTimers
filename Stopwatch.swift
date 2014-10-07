@@ -42,6 +42,7 @@ class Stopwatch: UIViewController {
             stopButtonTitle = "Stop"
             btnStop.setTitle(stopButtonTitle, forState: .Normal)
             myTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimerLabel", userInfo: nil, repeats: true)
+            test1234()
         }
     }
 

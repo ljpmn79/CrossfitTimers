@@ -538,10 +538,6 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Regular" image="first" id="llb-lc-03G"/>
-                    <connections>
-                        <outlet property="btnStop" destination="Rjc-NF-fGc" id="wtf-Ai-jPa"/>
-                        <outlet property="lblTimer" destination="h8e-jd-FVY" id="wwv-nX-YK6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCr-Qt-sZm" sceneMemberID="firstResponder"/>
             </objects>
