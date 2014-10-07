@@ -42,7 +42,7 @@ class Stopwatch: UIViewController {
             stopButtonTitle = "Stop"
             btnStop.setTitle(stopButtonTitle, forState: .Normal)
             myTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimerLabel", userInfo: nil, repeats: true)
-            test1234()
+
         }
     }
 
@@ -71,65 +71,16 @@ class Stopwatch: UIViewController {
         
         if countdown == true && countdownSeconds > 0 {
             countdownSeconds -= 1
-            if countdownSeconds < 10 {
-                strSeconds = "0\(countdownSeconds)"
-            } else {
-                strSeconds = "\(countdownSeconds)"
-            }
-            lblTimer.text = ":" + strSeconds
+            lblTimer.text = formatTime(countdownSeconds)
         } else if countdown == true && countdownSeconds == 0 {
             countdown = false
             totalSeconds = 1
-            lblTimer.text = ":01"
+            lblTimer.text = formatTime(totalSeconds)
         } else {
             totalSeconds += 1
-            seconds = totalSeconds % 60
-            minutes = (totalSeconds / 60) % 60
-            hours = totalSeconds / 3600
-            
-            if hours == 0 && minutes == 0 {
-                
-                if seconds < 10 {
-                    strSeconds = "0\(seconds)"
-                } else {
-                    strSeconds = "\(seconds)"
-                }
-                
-                lblTimer.text = ":" + strSeconds
-                
-            } else if hours == 0 {
-                strMinutes = "\(minutes)"
-                
-                if seconds < 10 {
-                    strSeconds = "0\(seconds)"
-                } else {
-                    strSeconds = "\(seconds)"
-                }
-                
-                lblTimer.text = strMinutes + ":" + strSeconds
-                
-            } else {
-                strHours = "\(hours)"
-                if minutes < 10 {
-                    strMinutes = "0\(minutes)"
-                } else {
-                    strMinutes = "\(minutes)"
-                }
-                if seconds < 10 {
-                    strSeconds = "0\(seconds)"
-                } else {
-                    strSeconds = "\(seconds)"
-                }
-                
-                lblTimer.text = strHours + ":" + strMinutes + ":" + strSeconds
+            lblTimer.text = formatTime(totalSeconds)
                 
             }
         }
- 
-        
-        
-
-        
-    }
 
 }

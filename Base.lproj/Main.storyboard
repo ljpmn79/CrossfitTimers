@@ -532,8 +532,8 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="8rk-5u-kBu"/>
-                                <exclude reference="nm1-Uz-pec"/>
                                 <exclude reference="Av9-Pk-yjm"/>
+                                <exclude reference="nm1-Uz-pec"/>
                             </mask>
                         </variation>
                     </view>
