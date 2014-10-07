@@ -105,7 +105,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="8rJ-Kc-sve" kind="show" id="G5v-J1-ao0"/>
+                                            <segue destination="zJL-Td-o5S" kind="show" id="gcC-bK-UpX"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HT7-BG-GYZ">
@@ -285,7 +285,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynp-sc-za7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="171"/>
+            <point key="canvasLocation" x="249" y="-814.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G4I-3I-iNr">
@@ -306,7 +306,7 @@
         <!--Stopwatch-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Stopwatch" id="9pv-A4-QxB" customClass="FirstViewController" customModule="CrossfitTimers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Stopwatch" id="9pv-A4-QxB" customClass="Stopwatch" customModule="CrossfitTimers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -333,7 +333,7 @@
                                     <action selector="stopTimer:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zjh-7k-hpB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="2SW-Ie-NnH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="2SW-Ie-NnH">
                                 <rect key="frame" x="222" y="120" width="155" height="95.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -370,50 +370,10 @@
             </objects>
             <point key="canvasLocation" x="-2532" y="-814.5"/>
         </scene>
-        <!--AMRAP-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="CrossfitTimers" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="215.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="AMRAP" image="second" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1606.5" y="-814.5"/>
-        </scene>
-        <!--Third View Controller-->
+        <!--Simple Tabata-->
         <scene sceneID="VAA-J4-pFl">
             <objects>
-                <viewController id="sMf-nm-dP7" customClass="ThirdViewController" customModule="CrossfitTimers" sceneMemberID="viewController">
+                <viewController title="Simple Tabata" id="sMf-nm-dP7" customClass="SimpleTabata" customModule="CrossfitTimers" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PD1-uS-YLr"/>
                         <viewControllerLayoutGuide type="bottom" id="HuJ-Bv-Agg"/>
@@ -518,11 +478,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkU-Yb-cGg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-751.5" y="-598.5"/>
+            <point key="canvasLocation" x="-802.5" y="-814.5"/>
+        </scene>
+        <!--AMRAP-->
+        <scene sceneID="4Mm-Qu-wMD">
+            <objects>
+                <viewController title="AMRAP" id="zJL-Td-o5S" customClass="AMRAP" customModule="CrossfitTimers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O8O-4Z-sIR"/>
+                        <viewControllerLayoutGuide type="bottom" id="v8v-BA-fqh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zO9-5z-Ggt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiK-0W-NAR">
+                                <rect key="frame" x="208" y="421" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTimer:" destination="zJL-Td-o5S" eventType="touchUpInside" id="ViB-5U-1Rn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjc-NF-fGc">
+                                <rect key="frame" x="358" y="421" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTimer:" destination="zJL-Td-o5S" eventType="touchUpInside" id="nuc-B6-1mp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="h8e-jd-FVY">
+                                <rect key="frame" x="222" y="120" width="155" height="95.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Rjc-NF-fGc" secondAttribute="centerX" constant="-75" id="8c3-xd-l1F"/>
+                            <constraint firstItem="h8e-jd-FVY" firstAttribute="top" secondItem="O8O-4Z-sIR" secondAttribute="bottom" constant="389.5" id="8rk-5u-kBu"/>
+                            <constraint firstItem="h8e-jd-FVY" firstAttribute="top" secondItem="O8O-4Z-sIR" secondAttribute="bottom" constant="100" id="Av9-Pk-yjm"/>
+                            <constraint firstItem="h8e-jd-FVY" firstAttribute="top" secondItem="O8O-4Z-sIR" secondAttribute="bottom" constant="100" id="Doe-pk-ch7"/>
+                            <constraint firstItem="v8v-BA-fqh" firstAttribute="top" secondItem="Rjc-NF-fGc" secondAttribute="bottom" constant="100" id="Lpc-gP-PWv"/>
+                            <constraint firstItem="v8v-BA-fqh" firstAttribute="top" secondItem="wiK-0W-NAR" secondAttribute="bottom" constant="100" id="Mnu-km-YyE"/>
+                            <constraint firstAttribute="centerX" secondItem="h8e-jd-FVY" secondAttribute="centerX" id="guS-yF-mfP"/>
+                            <constraint firstAttribute="centerX" secondItem="h8e-jd-FVY" secondAttribute="centerX" id="nm1-Uz-pec"/>
+                            <constraint firstAttribute="centerX" secondItem="wiK-0W-NAR" secondAttribute="centerX" constant="75" id="yml-nu-9uq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8rk-5u-kBu"/>
+                                <exclude reference="nm1-Uz-pec"/>
+                                <exclude reference="Av9-Pk-yjm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Regular" image="first" id="llb-lc-03G"/>
+                    <connections>
+                        <outlet property="btnStop" destination="Rjc-NF-fGc" id="wtf-Ai-jPa"/>
+                        <outlet property="lblTimer" destination="h8e-jd-FVY" id="wwv-nX-YK6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCr-Qt-sZm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1651.5" y="-814.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class Stopwatch: UIViewController {
 
     @IBOutlet weak var btnStop: UIButton!
     @IBOutlet weak var lblTimer: UILabel!

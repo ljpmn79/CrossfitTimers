@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class SimpleTabata: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,4 @@ class ThirdViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
