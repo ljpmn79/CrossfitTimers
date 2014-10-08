@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  AMRAP.swift
 //  CrossfitTimers
 //
 //  Created by Luciano Patino on 9/29/14.

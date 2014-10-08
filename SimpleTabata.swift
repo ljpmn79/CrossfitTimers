@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  SimpleTabata.swift
 //  CrossfitTimers
 //
 //  Created by Luciano Patino on 9/29/14.

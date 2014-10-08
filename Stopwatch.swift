@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  Stopwatch.swift
 //  CrossfitTimers
 //
 //  Created by Luciano Patino on 9/29/14.
@@ -14,21 +14,13 @@ class Stopwatch: UIViewController {
     @IBOutlet weak var lblTimer: UILabel!
     var isPaused:Bool = true
     var myTimer = NSTimer()
-    var totalSeconds = Int32()
-    var minutes = Int32()
-    var seconds = Int32()
-    var hours = Int32()
-    var strHours = String()
-    var strMinutes = String()
-    var strSeconds = String()
+    var totalSeconds:Int32 = -10
     var stopButtonTitle = String()
-    var countdown:Bool = true
-    var countdownSeconds:Int32 = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        lblTimer.text = "00:00"
+        lblTimer.text = "00:00.0"
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,11 +48,9 @@ class Stopwatch: UIViewController {
             myTimer.invalidate()
             break
         case "Reset":
-            totalSeconds = 0
-            lblTimer.text = "00:00"
+            totalSeconds = -10
+            lblTimer.text = "00:00.0"
             stopButtonTitle = "Stop"
-            countdown = true
-            countdownSeconds = 10
             btnStop.setTitle(stopButtonTitle, forState: .Normal)
         default:
         break
@@ -68,19 +58,8 @@ class Stopwatch: UIViewController {
     }
     
     func updateTimerLabel() {
-        
-        if countdown == true && countdownSeconds > 0 {
-            countdownSeconds -= 1
-            lblTimer.text = formatTime(countdownSeconds)
-        } else if countdown == true && countdownSeconds == 0 {
-            countdown = false
-            totalSeconds = 1
-            lblTimer.text = formatTime(totalSeconds)
-        } else {
             totalSeconds += 1
             lblTimer.text = formatTime(totalSeconds)
-                
-            }
-        }
-
-}
+    }
+    
+ }
