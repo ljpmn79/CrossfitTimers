@@ -20,7 +20,7 @@ class Stopwatch: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        lblTimer.text = "00:00.0"
+        lblTimer.text = "00:00"
     }
 
     override func didReceiveMemoryWarning() {

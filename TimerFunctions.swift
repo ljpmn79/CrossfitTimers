@@ -10,8 +10,7 @@ import Foundation
 
 func formatTime(time:Int32) -> String{
         
-    var seconds:Int32 = (time % 60)
-    seconds = abs(seconds)
+    var seconds:Int32 = abs((time % 60))
     var minutes:Int32 = (time / 60) % 60
     var hours:Int32 = Int32(time / 3600)
     var timerLabel = String()
