@@ -49,7 +49,7 @@ class Stopwatch: UIViewController {
             break
         case "Reset":
             totalSeconds = -10
-            lblTimer.text = "00:00.0"
+            lblTimer.text = "00:00"
             stopButtonTitle = "Stop"
             btnStop.setTitle(stopButtonTitle, forState: .Normal)
         default:
