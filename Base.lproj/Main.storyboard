@@ -243,7 +243,24 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zz-FF-emI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2532" y="-18"/>
+            <point key="canvasLocation" x="-2433" y="-28.5"/>
+        </scene>
+        <!--Fight Gone Bad-->
+        <scene sceneID="PzY-EY-gDB">
+            <objects>
+                <viewController id="Kss-mv-cnh" customClass="FightGoneBad" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mse-F2-5lP"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWH-nC-N1m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dFD-hZ-ukm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zk8-ha-bwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="-145.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="mt8-dG-kNL">
@@ -488,7 +505,7 @@
                         <viewControllerLayoutGuide type="top" id="O8O-4Z-sIR"/>
                         <viewControllerLayoutGuide type="bottom" id="v8v-BA-fqh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zO9-5z-Ggt">
+                    <view key="view" contentMode="scaleToFill" id="zO9-5z-Ggt" customClass="UIPageControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
