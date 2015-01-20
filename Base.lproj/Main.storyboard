@@ -254,13 +254,14 @@
                         <viewControllerLayoutGuide type="bottom" id="rWH-nC-N1m"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dFD-hZ-ukm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zk8-ha-bwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-690" y="-145.5"/>
+            <point key="canvasLocation" x="-864" y="61.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="mt8-dG-kNL">
